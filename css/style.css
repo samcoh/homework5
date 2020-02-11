@@ -77,13 +77,8 @@ Keyframes for animation*/
 #logo{
    -webkit-animation:logo_wiggle;
   animation-name: logo_wiggle;
-  /*animation-direction: alternate;*/
-  animation-timing-function: ease-in;
-  animation-duration: 3s;
-  /*display: flex;*/
-  /*justify-self: center;*/
 
-  
+  animation-duration: 3s;
 }
 
 /* Cards! */
@@ -96,11 +91,9 @@ Keyframes for animation*/
   flex-wrap: wrap;
   justify-content: center;
   /*vertically aligns the flex items*/
-  align-content: center;
+  align-items: center;
+  /*align-content: center;*/
   /*horizontally aligns the flex items*/
-
-
-
 
 }
 
@@ -112,39 +105,12 @@ Keyframes for animation*/
   padding: 0 0 50px 0;
 
 
-  display: flex;
-  flex-direction: column;
   flex-basis: 400px;
 
-  /*flex-wrap: wrap;*/
-
-  /*align-items: flex-end;*/
-  /*align-content: center;*/
-  /*justify-content: center;*/
-
-
-  /*align-content: center;*/
-  /*margin: auto;*/
   /*display: flex;*/
-
-
-  /*align-content: center;*/
+  /*flex-direction: column;*/
 
   /*flex: 0 0 400px;*/
-  /*justify-content:  center;*/
-  /*align-content: center;*/
-
-
-
-
-
-  /*align-items: center;*/
-
-  /*align-items: center;*/
-
-  /*justify-content: center;*/
-  /*align-content: center;*/
-
 
 }
 
@@ -196,7 +162,6 @@ Keyframes for animation*/
 
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: space-evenly;*/
   justify-content: center;
   align-content:stretch;
 
@@ -222,14 +187,8 @@ header{
 }
 
 .nav_links{
- 
-  /*list-style: none;*/
   display: flex;
   flex-direction: column;
-
-
-
-
 }
 
 .nav_item a{
@@ -248,13 +207,7 @@ header{
 
   /* Cards! */
   .card {
-    /*flex: 0 0 225px;*/
-    flex-basis: 225px ;
-    align-self: center;
-    /*align-self: center;*/
-    /*justify-self: center;*/
-
-
+    flex-basis: 225px;
   }
 
   .card_big{
@@ -265,24 +218,22 @@ header{
   /* Navbar */
 
   header{
-    /*justify-content: flex-start;*/
-    /*align-content: space-between;*/
-    justify-content: space-between;
     flex-direction: row;
-
-
-    
+    justify-content: space-between;
   }
 
   .nav_links{
-    display: flex;
+
     flex-direction: row;
-
-
   }
 
   .nav_item a{
     padding: 10px;
+  }
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  #logo {
+    animation: none;
   }
 }
 
@@ -294,9 +245,14 @@ header{
     align-items: center;
   }
 
+  .pricing{
+    align-items: flex-start;
+  }
+
   .card {
     flex-basis: 200px;
   }
+
  .gallery, #gallery{
     display: none;
 
@@ -304,7 +260,5 @@ header{
  footer{
    display: block;
  }
-
-
 
 }
