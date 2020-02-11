@@ -154,7 +154,6 @@ Keyframes for animation*/
 }
 
 /* Gallery! */
-/*flex-wrap: wrap;  #put this somewhere */
 
 .gallery{
   
@@ -241,10 +240,10 @@ header{
   body{
     background: #fff;
   }
+
   header{
     align-items: center;
   }
-
   .pricing{
     align-items: flex-start;
   }
